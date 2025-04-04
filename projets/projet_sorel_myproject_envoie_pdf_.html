@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link href="/css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6 col-xs-12">
+
+                    <nav class="navbar">
+                        <ul class="navbar-menu">
+                            <li class="navbar-item logo">
+                                <a href="/" class="navbar-link logo-link">
+                                    <span class="navbar-title">Accueil</span>
+                                    <i class="fas fa-home navbar-icon"></i>
+                                </a>
+                            </li>
+
+                            <li class="navbar-item">
+                                <a href="/index.html#projets" class="navbar-link logo-link">
+                                    <i class="fas fa-folder navbar-icon"></i>
+                                    <span class="navbar-title">Mes projets</span>
+                                </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="/veille_techno.html" class="navbar-link logo-link">
+                                    <i class="fas fa-bell navbar-icon"></i>
+                                    <span class="navbar-title">Veille technologique</span>
+                                </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="/index.html#contact" class="navbar-link logo-link">
+                                    <i class="fas fa-phone navbar-icon"></i>
+                                    <span class="navbar-title">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="presentationapp" class="case-study">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p>
+
+
+                        <br>
+                        Envoie des factures par email
+                        <br>
+                        <br>
+
+                        Fait par Adlen Souci
+                        <br>
+                        <br>
+                        Pour les entreprises SOREL / BEREL
+                        <br>
+                        <br>
+                    <h1>Objectif</h1>
+                    <br>
+                    Envoyer des fichiers au format PDF par courriel.<br>
+                    Les fichiers sont des factures émises par l’entreprise.<br>
+                    Les fichiers sont au préalable stockés dans un dossier.<br>
+
+                    <h2>L'application</h2>
+                    <br>
+                    <h3>Nom de l'application</h3>
+
+                    <p class="lead" style="color: rgba(128, 128, 128, 0.937);">My_Project_envoie_pdf.exe</p>
+                    <br>
+                    <br>
+                    <h3>Installation de l’application</h3>
+
+                    <p>Aucune particularité, le fichier est à poser dans un dossier au choix. 
+                        Il est accompagné d’un fichier de configuration : My_project_envoie_pdf.ini 
+                        Et d’un fichier texte contenant le message : message.txt <br>
+                    </p>
+
+                    <br>
+                    <br>
+                    Le fichier de configuration et le fichier contenant le message sont paramétrables depuis
+                    l’application. <br>
+                    Les 2 fichiers devront être installés dans le même dossier que l’exécutable.
+
+                    <br>
+                    <br>
+
+                    <h2> Méthodologie</h2>
+
+
+
+                    <h3>Lancement de l’application</h3>
+                    <br>
+                    Le lancement se fera par un double-clic sur l’exécutable :
+                    <br>
+                    <img src="img/app.png"></img>
+                    <br>
+                    <br>
+
+                    Icone de l’exécutable ; <br>
+                    <img src="img/icone.png"></img>
+
+                    <br>
+
+                    <h3>Menu principale</h3>
+
+                    Les champs sont pré rempli au chargement de la fenêtre.
+
+
+                    <ul>
+                        Avec :
+                        <li>Le profil : Adresse de l’expéditeur</li>
+                        <li>Le dossier : Dossier contenant les fichiers factures à envoyer</li>
+                        <li>Le sujet : Sujet de l’émail</li>
+                        <li>Copie à : Adresse mail en copie cachée pour s’assurer que les fichiers sont bien envoyés
+                        </li>
+                        <li>Message : Message du corps de l’email</li>
+
+                    </ul>
+
+                    <br>
+
+                    <img src="img/fenpng.png"></img>
+
+                    <br>
+
+                    Le contenu du dossier des factures est affiché dans la fenêtre.
+
+                    <br>
+
+                    <h3>4.3 Structure du fichier facture</h3>
+
+                    <br>
+
+
+                    Le nom de chaque fichier PDF est structuré pour avoir un maximum d’informations : <br>
+                    FCT + numéro facture + date de facture + code client + nom du client + !adresse mail !+ .PDF<br>
+                    L’adresse mail en dernière position est encadrée par « ! » pour être captée.<br>
+                    <br><br>
+                    Les fichiers qui ne contiennent pas d’adresse email sont déplacés dans un dossier : « FctSansEmail »
+
+                    <br><br>
+
+                    <h3>Paramétrages</h3>
+
+                    <br>
+
+                    L’icône <img src="img/par.png"></img>(paramètres) <br> permet de changer les paramètres par défaut
+                    pour le
+                    prochain chargement.
+                    <br>Ces paramètres sont inscrits dans le fichier de configuration (My_project_envoie_pdf.ini).<br>
+
+
+                    <img src="img/in.png">
+                    <br>
+                    La fenêtre est composée de 2 parties : <br>
+                    Paramètres de connexion<br>
+                    Paramètres de message <br>
+
+                    <br>
+
+                    <img src="img/config_message.png">
+
+                    <br>
+                    Le clic sur « Valider » va enregistrer les modifications dans le fichier de configuration et le
+                    fichier message.txt pour le message du corps de l’email.
+                    <br>
+
+                    <img src="img/envoie.png">
+                    <br>
+
+                    <img src="img/enregistrement.png">
+
+                    <br>
+
+                    <h3>Envoie des factures</h3>
+
+                    Le clic sur « <img src="img/go.png">» va envoyer chaque fichier PDF à l’adresse indiquée dans le
+                    fichier.
+                    A chaque envoie d’un fichier, ce dernier est déplacé dans le dossier « SAUVE » pour archivage.
+
+
+                    </p>
+
+
+    </section>
+
+
+
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+
+            <div class="row sub-footer">
+                <div class="col-md-12 text-center">
+                    <p>Fait par Adlen Souci</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Some Javascript -->
+    <script src="/js/jquery-2.1.1.js"></script>
+    <script src="/js/swiper.jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+    <script src="/js/timeline.js"></script>
+    <script src="/js/ascenceur.js"></script>
+
+
+    <!-- Initialize Client Swiper -->
+    <script>
+        var swiper1 = new Swiper('.client-swiper', {
+            slidesPerView: 3,
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 60,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is <= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    pagination: '.swiper-pagination'
+                },
+                // when window width is <= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is <= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                }
+            }
+        });
+        // Initialize Testimonial Swiper
+        var swiper2 = new Swiper('.testimonial-swiper', {
+            slidesPerView: 3,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            freeMode: true,
+            breakpoints: {
+                // when window width is <= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                // when window width is <= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is <= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            }
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

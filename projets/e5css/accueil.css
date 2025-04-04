@@ -1,0 +1,43 @@
+.bg-custom {
+    background-color: #F8EEB7;
+    /* Couleur de fond de la barre de navigation */
+}
+
+.navbar-brand {
+    color: purple;
+    /* Couleur du texte dans la barre de navigation */
+}
+
+.card-3d {
+    /* Adjust the margin values according to your preferences */
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    background-color: white;
+    color: rgb(37, 35, 35);
+    border-color:#dc4ee3;
+   
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(230, 0, 255, 0.1), 0 1px 3px rgba(230, 0, 255, 0.08);
+    
+}
+ 
+body {
+    /*background-image: url("/img/imgvectoriel.jpg");*/
+    background-color: rgb(215, 180, 230);
+}
+
+.card-3d:hover {
+    transform: perspective(1000px) rotateY(10deg);
+}
+
+.logo {
+    position: absolute;
+    top: 55px; /* Modifiez cette valeur en fonction de la hauteur de la barre de navigation */
+    right: 0;
+ }
+
+
+ .tenor-gif-embed img {
+    width: 50%;
+    height: auto;
+}

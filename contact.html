@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page de contact</title>
+  <!-- Liens vers les fichiers CSS de Bootstrap -->
+
+  <link rel="stylesheet" href="css2/bootstrap.min.css">
+  <link rel="stylesheet" href="css2/contact.css">
+  <link rel="stylesheet" href="css/time.css">
+  
+
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700"
+    rel="stylesheet">
+</head>
+
+<body class="bg-image">
+  
+
+  <h1 class=" mb-2 bg-transparent text-white text-center">Contactez moi </h1>
+  <header class="hero">
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-6 col-xs-12">
+        <nav class="main-navigation navbar d-none d-md-block sticky-top">
+          <div id="menu-toggle">
+            <div class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="cross">
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <ul class="main-nav">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#presentation">Presentation</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#ve">Veille technologique</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </header>
+
+
+    <!-- Section Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form action="send_email.php" method="POST" onsubmit="showConfirmation(event)" class="center" >
+
+              <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" name="name" class="form-control pink-border" required>
+              </div>
+              <div class="form-group">
+                <label for="emailAddress">Adresse e-mail :</label>
+                <input type="email" name="emailAddress" class="form-control pink-border" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Sujet :</label>
+                <input type="text" name="subject" class="form-control pink-border" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea name="message" rows="5" class="form-control pink-border" required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- Liens vers les fichiers JavaScript de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function showConfirmation(event) {
+      event.preventDefault(); // Empêche l'envoi du formulaire par défaut
+
+      Swal.fire({
+        title: "Mail envoyé !",
+        text: "Votre courrier électronique a été envoyé avec succès.",
+        icon: "success",
+        confirmButtonText: "OK"
+      }).then(function () {
+        // Réinitialiser le formulaire ici si nécessaire
+        event.target.submit(); // Envoyer le formulaire après la confirmation
+      });
+    }
+  </script>
+
+
+
+  <!-- Initialize Client Swiper -->
+  <script>
+    var swiper1 = new Swiper('.client-swiper', {
+      slidesPerView: 3,
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      spaceBetween: 60,
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is <= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: '.swiper-pagination'
+        },
+        // when window width is <= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is <= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        }
+      }
+    });
+    // Initialize Testimonial Swiper
+    var swiper2 = new Swiper('.testimonial-swiper', {
+      slidesPerView: 3,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      spaceBetween: 30,
+      grabCursor: true,
+      freeMode: true,
+      breakpoints: {
+        // when window width is <= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        // when window width is <= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        // when window width is <= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        }
+      }
+    });
+  </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script>
+    // Counterup
+    $('.counter').counterUp({
+      time: 1000
+    });
+
+    // Main Navigation
+    $('#menu-toggle').click(function () {
+      $(this).toggleClass('open'),
+        $('.main-nav').toggleClass('show-it');
+    })
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>

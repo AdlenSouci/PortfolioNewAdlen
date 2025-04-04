@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link href="/css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6 col-xs-12">
+
+                    <nav class="navbar">
+                        <ul class="navbar-menu">
+                            <li class="navbar-item logo">
+                                <a href="/" class="navbar-link logo-link">
+                                    <span class="navbar-title">Accueil</span>
+                                    <i class="fas fa-home navbar-icon"></i>
+                                </a>
+                            </li>
+
+                            <li class="navbar-item">
+                                <a href="/index.html#projets" class="navbar-link logo-link">
+                                    <i class="fas fa-folder navbar-icon"></i>
+                                    <span class="navbar-title">Mes projets</span>
+                                </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="/veille_techno.html" class="navbar-link logo-link">
+                                    <i class="fas fa-bell navbar-icon"></i>
+                                    <span class="navbar-title">Veille technologique</span>
+                                </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="/index.html#contact" class="navbar-link logo-link">
+                                    <i class="fas fa-phone navbar-icon"></i>
+                                    <span class="navbar-title">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="presentationapp" class="case-study">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+
+                    <br>
+                    Scanne code Barre et envoie de l'inventaire par mail
+                    <br>
+                    <br>
+
+                    Fait par Adlen Souci
+                    <br>
+                    <br>
+                    Pour les entreprises SOREL / BEREL
+                    <br>
+                    <br>
+                    <h1>Objectif</h1>
+                    <br>
+                    Le projet consiste à scanner un code-barres, récupérer les données de celui-ci afin de les
+                    enregistrer dans un champ de saisie. Les données vont alors être intégrées à un fichier txt puis
+                    envoyées par mail. Cela permet de faire l'inventaire et d'envoyer le compte rendu directement par
+                    mail.<br>Cela s'apparente à de l'automatisation dans le domaine de l'informatique, pour envoyer par exemple les devis et factures en un clic sans avoir à faire un
+                    courrier physique, mais également d'aller sur les messagerie : gmail, outlook, etc..., selectionner
+                    les destinataires et envoyer. <br>Cette demande est effectuée par une entreprise du nom de SOREL Fabricant spécialisé dans la réalisation de pièces en plastique injecté, afin de pouvoir gérer l'inventaire des stocks plus rapidement. L'application est fonctionnelle, mais elle évolue selon les demandes du client.<br>
+
+                    <h2>L'application</h2>
+                    <br>
+                    <h3>Nom de l'application</h3>
+
+                    <p class="lead" style="color: rgba(128, 128, 128, 0.937);">My_Project_Sorel.exe</p>
+                    <br>
+                    <br>
+                    <h3>Installation de l’application</h3>
+
+                    <p> Avec l'installateur d'application windev <br> prochainement telechargable sur playstore et serveur cloud
+                        proposer par
+                        windev.
+                    </p>
+
+                    <br>
+                    <br>
+
+
+
+
+                    <br>
+
+                    <h3>Menu principale</h3>
+
+                    <img style="width: 20%;" src="img/sorel_accueil.jpg"></img>
+
+                    Sur la page d'acceuil il y a plusieurs fenêtres :
+
+
+                    <ul>
+                        Avec :
+                        <li>Transfert</li>
+                        <li>Inventaire</li>
+                        <li>Consommation</li>
+                        <li>Controle_Fabrication</li>
+
+                    </ul>
+
+                    <br>
+
+                    <img src="img/transfert.jpg"></img>
+
+                    <br>
+
+                    l'appareil utiliser et un appareil mobile smartphone zebra qui a donc un scanner code barre integrer.
+
+
+                    <br>
+
+                    Une fois le code barre scanner les champs de la fenetre vont être rempli grace au code barre
+                    <br>
+                    <ul>
+                        Les champs sont :
+
+                        <li>Article</li>
+                        <li>Emplacement d'origine</li>
+                        <li>Quantité</li>
+                        <li>à Emplacement destination</li>
+
+                    </ul>
+
+                    <h3>Creation du fichier contenant les informations</h3>
+                    Avec le bouton "Valider"
+
+                    <br>
+
+
+
+                    <br>
+
+                    <h3>Envoie du Document par mail</h3>
+
+                    <br>
+
+                    <ul>
+                        Il faut entrer les informations suivantes :
+
+                        <li>Expediteur : une adresse mail</li>
+                        <li>mdp : mot de passe d'application ou mot de passe fournie sur outlook(le mot de passe peut
+                            être
+                            configurer
+                            directement dans l'application ou dans un fichier.ici)</li>
+                        <li>destinataires : adresse de destinataire</li>
+                        <li>nom : nom de l'expediteur</li>
+
+                    </ul>
+
+                    <img src="img/mail.png">
+
+                    <br>
+                    Le bouton mail permet donc d'envoyer le mail.
+
+
+
+                    </p>
+
+
+    </section>
+
+
+
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+
+
+
+    <section id="contact" class="contact-banner">
+        <div class="container">
+
+            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=adlensouci07@outlook.com" target="_blank"
+                class="btn btn-primary">
+                Contactez-moi
+            </a>
+        </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+
+            <div class="row sub-footer">
+                <div class="col-md-12 text-center">
+                    <p>Fait par Adlen Souci</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Some Javascript -->
+    <script src="/js/jquery-2.1.1.js"></script>
+    <script src="/js/swiper.jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+    <script src="/js/timeline.js"></script>
+    <script src="/js/ascenceur.js"></script>
+
+
+    <!-- Initialize Client Swiper -->
+    <script>
+        var swiper1 = new Swiper('.client-swiper', {
+            slidesPerView: 3,
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 60,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is <= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    pagination: '.swiper-pagination'
+                },
+                // when window width is <= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is <= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                }
+            }
+        });
+        // Initialize Testimonial Swiper
+        var swiper2 = new Swiper('.testimonial-swiper', {
+            slidesPerView: 3,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            freeMode: true,
+            breakpoints: {
+                // when window width is <= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                // when window width is <= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is <= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            }
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
