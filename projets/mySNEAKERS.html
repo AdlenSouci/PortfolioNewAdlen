@@ -2,114 +2,216 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="e5css/accueil.css">
-    <link rel="stylesheet" href="e5css/carousel.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Portfolio</title>
 
-    <title>My Sneakers</title>
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link href="/css/style.css" rel="stylesheet">
 
-    <style>
-        .carousel {
-            margin: auto;
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
 
-            max-width: 500px;
 
-        }
-
-        .carousel-item img {
-            max-height: 400px;
-
-            object-fit: cover;
-
-            width: 100%;
-
-        }
-    </style>
 </head>
 
 <body>
+    <header class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6 col-xs-12">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+                    <nav class="navbar">
+                        <ul class="navbar-menu">
+                            <li class="navbar-item logo">
+                                <a href="/" class="navbar-link logo-link">
+                                    <span class="navbar-title">Accueil</span>
+                                    <i class="fas fa-home navbar-icon"></i>
+                                </a>
+                            </li>
+
+                            <li class="navbar-item">
+                                <a href="/index.html#projets" class="navbar-link logo-link">
+                                    <i class="fas fa-folder navbar-icon"></i>
+                                    <span class="navbar-title">Mes projets</span>
+                                </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="/veille_techno.html" class="navbar-link logo-link">
+                                    <i class="fas fa-bell navbar-icon"></i>
+                                    <span class="navbar-title">Veille technologique</span>
+                                </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="/index.html#contact" class="navbar-link logo-link">
+                                    <i class="fas fa-phone navbar-icon"></i>
+                                    <span class="navbar-title">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="presentationapp" class="case-study py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="mb-4 text-center">My Sneakers Web Shop</h2>
+    
+                    <div class="mb-5">
+                        <iframe src="https://my-sneakers-shop.fr/" 
+                                title="My Sneakers Shop" 
+                                style="width: 100%; height: 700px; border: none;" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    
+    
+                    <h3 class="mb-4">Mon projet scolaire</h3>
+    
+                    <div class="bg-light p-4 rounded-3 shadow-sm">
+                        <p class="text-justify">
+                            Pendant mon année à l'IFC Avignon, j'ai eu comme projet de réaliser un site web. Le but était d'apprendre à utiliser une base de données pour gérer des données en temps réel, en travaillant principalement avec PHP. Pour construire l'interface, j'ai utilisé HTML et CSS, en m'appuyant sur Bootstrap pour obtenir un rendu propre et responsive.
+                        </p>
+                        <p class="text-justify">
+                            J'ai aussi intégré du JavaScript pour rendre le site interactif avec des effets visuels et des requêtes AJAX, afin de pouvoir mettre à jour des éléments sans recharger la page. Avant de commencer le développement, j'ai réalisé des maquettes sur Figma pour avoir une vision claire du design.
+                        </p>
+                        <p class="text-justify">
+                            Pendant toute la durée du projet, j'ai travaillé en local. À chaque modification stable, je faisais un push sur GitHub, connecté à mon hébergement O2Switch pour mettre en ligne mon site.
+                        </p>
+                        <p class="text-justify">
+                            J'ai choisi de créer un site autour des sneakers parce que c'est une vraie passion pour moi. Depuis longtemps, je rêve d’en avoir une grande collection. C'était l'occasion de mêler mon intérêt personnel à un projet concret.
+                        </p>
+                        <p class="text-justify">
+                            J'ai développé le site en PHP en utilisant Laravel. Ce framework est simple à prendre en main, tout en proposant une structure solide et des outils efficaces. Il m’a permis de construire mon projet plus rapidement tout en gardant un bon niveau de qualité.
+                        </p>
+                        <p class="text-justify">
+                            Pour l'authentification, j'ai choisi Breeze. C'est un outil vraiment pratique qui simplifie la mise en place du système d'inscription, de connexion et de sécurité. Breeze applique directement les bonnes pratiques : protection CSRF, mots de passe sécurisés, gestion des sessions... Ce qui est rassurant, surtout pour un premier projet où gérer la sécurité manuellement peut être très compliqué.
+                        </p>
+
+                        <h3 class="mt-5">Technologies utilisées</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>Bootstrap</li>
+                            <li>MySQL</li>
+                            <li>Laravel</li>
+                            <li>Breeze</li>
+                        </ul>
+    
+                        <h3 class="mt-5">Liens</h3>
+                        <ul>
+                            <li><a href="https://github.com/AdlenSouci/projet_sneakers-test/blob/main/cahier_charge.md" target="_blank">GitHub : cahier des charges</a></li>
+                            <li><a href="https://github.com/AdlenSouci/projet_sneakers-test/blob/main/README.md" target="_blank">GitHub : documentation technique lors de l'installation</a></li>
+                            <li><a href="https://my-sneakers-shop.fr/" target="_blank">Site web</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="/shop">Shop</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/basket">basket</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/login">login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
-                </ul>
+
+            <div class="row sub-footer">
+                <div class="col-md-12 text-center">
+                    <p>Fait par Adlen Souci</a></p>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <div class="container mt-5">
-
-        <div class="card card-3d" style="max-width: 600px; max-height: 400px">
-            <div class="card-body">
-                <h5 class="card-title">Bienvenue sur My Sneakers</h5>
-                <p class="card-text lead">
-                    y Sneakers est la boutique de sneakers en ligne qui vous propose une large sélection de modèles, de
-                    marques et de prix. Que vous soyez un collectionneur averti ou un simple amateur de sneakers, vous
-                    trouverez sur notre site les chaussures qui vous correspondent.
-
-                    Nous proposons une large sélection de sneakers, allant des modèles classiques aux modèles les plus
-                    exclusifs. Vous trouverez sur notre site des sneakers de toutes les marques, telles que Nike,
-                    Adidas, Jordan, Converse, Puma, etc. Vous pourrez également trouver des sneakers de différentes
-                    catégories, telles que les baskets de running, de basketball, de tennis, etc.
-                </p>
-
-            </div>
-        </div>
-    </div>
+    </footer>
 
 
 
 
-    <br>
+    <!-- Some Javascript -->
+    <script src="/js/jquery-2.1.1.js"></script>
+    <script src="/js/swiper.jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+    <script src="/js/timeline.js"></script>
+    <script src="/js/ascenceur.js"></script>
 
 
-    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="e5img/img/1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="e5img/img/2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="e5img/img/3.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    <!-- Initialize Client Swiper -->
+    <script>
+        var swiper1 = new Swiper('.client-swiper', {
+            slidesPerView: 3,
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 60,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is <= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    pagination: '.swiper-pagination'
+                },
+                // when window width is <= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is <= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                }
+            }
+        });
+        // Initialize Testimonial Swiper
+        var swiper2 = new Swiper('.testimonial-swiper', {
+            slidesPerView: 3,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            freeMode: true,
+            breakpoints: {
+                // when window width is <= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                // when window width is <= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is <= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            }
+        });
+    </script>
 
-    <!--Script Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+
 
 
 </body>
