@@ -1,7 +1,7 @@
-AuthType Basic
-AuthName "Accès protégé"
-AuthUserFile /home/kuph3194/.htpasswd_adlen
-require valid-user
+#AuthType Basic
+#AuthName "Accès protégé"
+#AuthUserFile /home/kuph3194/.htpasswd_adlen
+#require valid-user
 
 RewriteEngine On 
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
