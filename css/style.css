@@ -948,10 +948,58 @@ h1.heading.pink:after {
   /* Ajoutez cette ligne */
 }
 
+/*my sneakers site web*/
 .card-project3 {
   display: inline-block;
  
   background: url("/img/logo.png");
+  width: 200px;
+  height: 300px;
+  border: 1px solid #ab2ad6;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+ 
+}
+
+.card-project4 {
+  background: url("/img/logo.png");
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  border: 1px solid #ab2ad6;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  /* Ajoutez cette ligne */
+}
+.card-project5 {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  border: 1px solid #ab2ad6;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  /* Ajoutez cette ligne */
+}
+.card-project6 {
+  display: inline-block;
   width: 200px;
   height: 300px;
   border: 1px solid #ab2ad6;
@@ -977,6 +1025,18 @@ h1.heading.pink:after {
 }
 
 .card-project3:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(167, 42, 201, 0.5);
+}
+.card-project4:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(167, 42, 201, 0.5);
+}
+.card-project5:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(167, 42, 201, 0.5);
+}
+.card-project6:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(167, 42, 201, 0.5);
 }
