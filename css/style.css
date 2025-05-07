@@ -968,7 +968,7 @@ h1.heading.pink:after {
 }
 
 .card-project4 {
-  background: url("/img/logo.png");
+  background: url("/img/logocrudSneakers.png");
   display: inline-block;
   width: 200px;
   height: 300px;
@@ -984,6 +984,7 @@ h1.heading.pink:after {
   /* Ajoutez cette ligne */
 }
 .card-project5 {
+  background: url("/img/sorellogo.png");
   display: inline-block;
   width: 200px;
   height: 300px;
@@ -999,6 +1000,7 @@ h1.heading.pink:after {
   /* Ajoutez cette ligne */
 }
 .card-project6 {
+  background: url("/img/AjoutArticle.png");
   display: inline-block;
   width: 200px;
   height: 300px;
